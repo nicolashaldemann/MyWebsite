@@ -20,7 +20,7 @@
 
 .first-txt {
   position: absolute;
-  font-size: 5vw;
+  font-size: 10vh;
   top: 10%;
   left: 10%;
   right: 50%;
@@ -32,4 +32,16 @@ body {
   background-color: rgb(0, 0, 29);
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.parallax {
+  background-image: url("Pictures/lightbulb.jpg");
+
+  height: 90vh;
+
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10vh;
 }

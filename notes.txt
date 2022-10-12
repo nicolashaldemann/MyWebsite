@@ -5,9 +5,15 @@ smooth ascrolling
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery
 
 
+https://www.youtube.com/watch?v=1wfeqDyMUx4&ab_channel=OnlineTutorials
+
+Parralax Scrolling
+https://www.w3schools.com/howto/howto_css_parallax.asp
+
 
 
 animate.style
+mozilla web api
 
 
 

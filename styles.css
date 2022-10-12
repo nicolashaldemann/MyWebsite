@@ -1,9 +1,9 @@
 .header-image {
-  width: 100%;
+  height: 80vh;
 }
 
 .image-container {
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(185, 185, 185);
   padding: 16px;
 }
 

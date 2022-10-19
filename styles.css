@@ -1,10 +1,48 @@
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1.5fr;
+  grid-template-areas:
+    "ppicture pname"
+    "work education";
+}
+
+ppicture {
+  grid-area: picture;
+}
+pname {
+  grid-area: name;
+}
+
+work {
+  grid-area: work;
+}
+
+education {
+  grid-area: education;
+}
+
+@media only screen and (max-width: 550px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-areas:
+      "ppicture"
+      "name"
+      "work"
+      "education";
+  }
+}
+
 .header-image {
-  height: 80vh;
+  height: 40vh;
 }
 
 .image-container {
   background-color: rgb(185, 185, 185);
   padding: 16px;
+  height: 40vh;
 }
 
 .flex-container {

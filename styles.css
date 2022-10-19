@@ -2,10 +2,12 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
   grid-template-areas:
     "ppicture pname"
-    "work education";
+    "work work"
+    "education education";
 }
 
 ppicture {
@@ -68,7 +70,7 @@ body {
   font-size: 10vh;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1290px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;

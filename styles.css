@@ -2,10 +2,12 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
   grid-template-areas:
     "ppicture pname"
-    "work education";
+    "work work"
+    "education education";
 }
 
 ppicture {
@@ -23,37 +25,18 @@ education {
   grid-area: education;
 }
 
-@media only screen and (max-width: 550px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
-    grid-template-areas:
-      "ppicture"
-      "name"
-      "work"
-      "education";
-  }
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
-.header-image {
-  height: 40vh;
-}
-
-.image-container {
-  background-color: rgb(185, 185, 185);
-  padding: 16px;
-  height: 40vh;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-.flex-container > div {
-  margin: 1vw;
-  padding: 2vw;
-  font-size: 5vw;
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .first-txt {
@@ -62,6 +45,11 @@ education {
   top: 10%;
   left: 10%;
   right: 50%;
+}
+
+.header_text {
+  height: 10vh;
+  font-size: 3.5vw;
 }
 
 body {
@@ -74,12 +62,34 @@ body {
 
 .parallax {
   background-image: url("Pictures/lightbulb.jpg");
-
   height: 90vh;
-
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 10vh;
+}
+
+@media only screen and (max-width: 1290px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "ppicture"
+      "pname"
+      "work"
+      "education";
+  }
+
+  body {
+    font-size: 4.5vw;
+    color: aliceblue;
+    background-color: rgb(0, 0, 29);
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .header_text {
+    height: 10vh;
+    font-size: 4.5vw;
+  }
 }

@@ -2,7 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1.5fr;
+  grid-template-rows: 2fr 2fr;
   grid-template-areas:
     "ppicture pname"
     "work education";
@@ -29,31 +29,25 @@ education {
     grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
     grid-template-areas:
       "ppicture"
-      "name"
+      "pname"
       "work"
       "education";
   }
 }
 
-.header-image {
-  height: 40vh;
-}
-
-.image-container {
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   background-color: rgb(185, 185, 185);
   padding: 16px;
-  height: 40vh;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-.flex-container > div {
-  margin: 1vw;
-  padding: 2vw;
-  font-size: 5vw;
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .first-txt {

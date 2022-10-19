@@ -24,65 +24,51 @@ Standort abfragen -> was mit api
 
 
 grid
-<head>
-  
-</head>
 
+      <div class="grid">
+        <div id="ppicture">Picture</div>
+        <div id="pname">Name</div>
+        <div id="work">Work</div>
+        <div id="education">Education</div>
 
-
-<div class="container">
-  <nav> Navbar </nav>
-  <main> Mainbar </main>
-  <div id="sidebar">Sidebar</div>
-  <div id="content1">Content1</div>
-  <div id="content2">Content2</div>
-  <div id="content3">Content3</div>
-  <footer> Footer </footer>
-</div>
+      </div>
 
 
 
 
-.container{
+      .grid {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-  
-  grid-template-areas:"nav nav nav nav"
-    "sidebar main main main"
-    
-    "content1 content2 content3 content3"
-    "footer footer footer footer";
-  
-  grid-gap: 0.2rem;
-  
-  
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1.5fr;
+  grid-template-areas:
+    "ppicture pname"
+    "work education";
 }
- 
-nav{grid-area:nav;}
-main{grid-area:main;}
-content1{grid-area:content1;}
-content2{grid-area:content2;}
-content3{grid-area:content3;}
-footer{grid-area:footer;}
-sidebar{grid-area:sidebar;}
 
+ppicture {
+  grid-area: picture;
+}
+pname {
+  grid-area: name;
+}
 
+work {
+  grid-area: work;
+}
 
-@media only screen and (max-width:550px) {
-  .container{
+education {
+  grid-area: education;
+}
+
+@media only screen and (max-width: 550px) {
+  .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
     grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
+      "ppicture"
+      "name"
+      "work"
+      "education";
   }
 }
-
-

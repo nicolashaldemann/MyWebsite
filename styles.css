@@ -10,19 +10,52 @@
     "education education";
 }
 
-ppicture {
-  grid-area: picture;
+#ppicture {
+  grid-area: ppicture;
 }
-pname {
-  grid-area: name;
+#pname {
+  grid-area: pname;
 }
 
-work {
+#work {
   grid-area: work;
 }
 
-education {
+#education {
   grid-area: education;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 15px;
+}
+
+header ul li a:hover {
+  background: white;
+  color: black;
 }
 
 .gallery__img {
@@ -37,14 +70,6 @@ education {
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 1;
-}
-
-.first-txt {
-  position: absolute;
-  font-size: 10vh;
-  top: 10%;
-  left: 10%;
-  right: 50%;
 }
 
 .header_text {
@@ -70,7 +95,7 @@ body {
   font-size: 10vh;
 }
 
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;

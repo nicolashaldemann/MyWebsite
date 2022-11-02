@@ -26,58 +26,18 @@ Standort abfragen -> was mit api
 
 
 
-
-grid
-
-      <div class="grid">
-        <div id="ppicture">Picture</div>
-        <div id="pname">Name</div>
-        <div id="work">Work</div>
-        <div id="education">Education</div>
-
-      </div>
+    <header>
 
 
-
-
-      .grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1.5fr;
-  grid-template-areas:
-    "ppicture pname"
-    "work education";
-}
-
-ppicture {
-  grid-area: picture;
-}
-pname {
-  grid-area: name;
-}
-
-work {
-  grid-area: work;
-}
-
-education {
-  grid-area: education;
-}
-
-@media only screen and (max-width: 550px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
-    grid-template-areas:
-      "ppicture"
-      "name"
-      "work"
-      "education";
-  }
-}
-
-
-
-
+  
+      <nav>
+        <ul class="navigation">
+          <li><a href="#ppicture">Picture</a></li>
+          <li><a href="#pname">Name</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#arbeitserfahrung">Arbeitserfahrung</a></li>
+          <li><a href="#referenzen">Referenzen</a></li>
+    </ul>
+  </nav>
+</header>
 

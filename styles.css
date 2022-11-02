@@ -6,8 +6,8 @@
   grid-gap: 10px;
   grid-template-areas:
     "ppicture pname"
-    "work work"
-    "education education";
+    "education education"
+    "work work";
 }
 
 #ppicture {
@@ -48,12 +48,17 @@ header ul li {
 
 .simpleSlides {
   height: 90vh;
+  background-image: linear-gradient(
+    rgb(0, 0, 29),
+    rgb(0, 52, 100) 50%,
+    rgb(0, 0, 29)
+  );
 }
 
 .slides {
   display: none;
-  max-height: 30vh;
-  max-width: 40vh;
+  max-height: 20vh;
+  max-width: 20vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -161,7 +166,7 @@ body {
 :root {
   --white: #fff;
   --light-blue: lightblue;
-  --color-blue: blue;
+  --color-blue: rgb(0, 0, 137);
   --color-dark-grey: #222831;
 }
 

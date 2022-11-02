@@ -1,3 +1,4 @@
+/*smooth Scroll*/
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -9,6 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+/*Slideshow*/
 var simpleSlides = function () {
   var i;
   var slides = document.querySelectorAll(".slides");
@@ -23,6 +25,7 @@ var simpleSlides = function () {
   setTimeout(simpleSlides, 3600);
 };
 
+/*Timeline*/
 var count = 0;
 simpleSlides();
 

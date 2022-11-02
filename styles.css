@@ -63,6 +63,11 @@ header ul li {
   animation: animateleft 1.5s;
 }
 
+.animate-left-text {
+  position: relative;
+  animation: animateleft 1.5s;
+}
+
 @keyframes animateleft {
   from {
     left: -500px;

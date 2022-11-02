@@ -1,6 +1,10 @@
 Notes
 
 
+https://www.codingsnow.com/2022/04/tutorial69.html
+
+
+
 smooth ascrolling
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery
 
@@ -72,3 +76,8 @@ education {
       "education";
   }
 }
+
+
+
+
+

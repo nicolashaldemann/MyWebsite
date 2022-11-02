@@ -2,12 +2,13 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-areas:
     "ppicture pname"
     "education education"
-    "work work";
+    "arbeitserfahrung arbeitserfahrung"
+    "referenzen referenzen";
 }
 
 #ppicture {
@@ -17,8 +18,12 @@
   grid-area: pname;
 }
 
-#work {
-  grid-area: work;
+#referenzen {
+  grid-area: referenzen;
+}
+
+#arbeitserfahrung {
+  grid-area: arbeitserfahrung;
 }
 
 #education {
@@ -140,7 +145,7 @@ body {
     grid-template-areas:
       "ppicture"
       "pname"
-      "work"
+      "referenzen"
       "education";
   }
 

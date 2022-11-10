@@ -73,3 +73,23 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
+
+/*Content Cards*/
+const card = document.querySelector(".card__inner");
+
+card.addEventListener("dblclick", function alertMsg() {
+  alert(
+    "Um Nachricht zu sehen auf folgenden Proton Mail zugreifen: mywebsite_NH@proton.me Passwort: B-qwertz-F"
+  );
+});
+
+card.addEventListener("dblclick", function (e) {
+  card.classList.toggle("is-flipped");
+});
+
+function SendMessage() {
+  alert(
+    "Um Nachricht zu sehen auf folgenden Proton Mail zugreifen: mywebsite_NH@proton.me Passwort: B-qwertz-F"
+  );
+  card.classList.toggle("is-flipped");
+}

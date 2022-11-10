@@ -6,24 +6,26 @@
     <title>Nicolas Haldemann</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="Burger_Menu.css" />
+    <link rel="stylesheet" href="Content_Cards.css" />
+    <link rel="stylesheet" href="contact_form.css" />
     
   </head>
   <body>
 
     <header id="navbar">
       <nav class="navbar-container container_burger">
-        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <button_burger type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+        </button_burger>
         <div id="navbar-menu" aria-labelledby="navbar-toggle">
           <ul class="navbar-links">
-            <li class="navbar-item"><a class="navbar-link" href="#ppicture">Picture</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#pname">Name</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#education">Education</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#arbeitserfahrung">Arbeitserfahrung</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#ppicture">Portrait</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#pname">Informationen</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#education">Ausbildung</a></li>         
             <li class="navbar-item"><a class="navbar-link" href="#referenzen">Referenzen</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#kontakt">Kontakt</a></li>
           </ul>
         </div>
       </nav>
@@ -54,11 +56,96 @@
             <div class="slides animate-left"><img  src="Pictures/mcdonald.png">Text Hier4</div>
           </div>
         </section>
-        <section id="arbeitserfahrung" >Arbeitserfahrung</section>
+        <section id="kontakt" >
+<!--card-->
+<div class="card">
+  <div class="card__inner">
+    <div class="card__face card__face--back">
+      <!--end-->
+      <div>
+        <div>
+          <div>
+            <div class="text-center">
+              <h1>
+                Kontaktieren Sie mich!
+              </h1>
+              <p>
+                Füllen Sie das untenstehende Formular aus
+                
+              </p>
+            </div>
+            <div class="m-7">
+              
+              <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <input type="hidden" name="access_key" value="ea484dda-fc57-4500-b84f-5d906456893c" />
+                <input type="hidden" name="subject" value="Test für MyWebsite" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+      
+                <div class="mb-6">
+                  <label>
+                    <input type="text" name="name" id="name" required />
+                    <div class="label-text">Vor- und Nachname</div>
+                </label>
+                 
+                </div>
+                <div class="mb-6">
+                  <label>
+                    <input type="email" name="email" id="email" required />
+                    <div class="label-text">Email</div>
+                </label>
+                  
+                </div>
+                <div class="mb-6">
+                  <label>
+                    <input type="text" name="phone" id="phone" required />
+                    <div class="label-text">Telefonnummer</div>
+                </label>
+                 
+                </div>
+                <div class="mb-6">
+
+                  
+                  <label for="message" class="label-text">Nachricht</label>
+
+                  <textarea  rows="3" name="message" id="message" class="label-text" required></textarea>
+              
+      
+                  
+                </div>
+                <div class="mb-6">
+                  <button type="submit">
+                    Senden
+                  </button>
+                </div>
+                <p id="result"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+    </div>
+    <div class="card__face card__face--front">
+      <div class="card__content">
+        <div class="card__header">
+          <img src="Pictures/contact.png" alt="" class="pp" />
+          
+        </div>
+
+        <div class="card__body">
+          <h3>Für Kontaktformular doppelklicken</h3>
+          <button onclick="SendMessage()">Oder hier klicken</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card-->
+        </section>
         <section id="education"> 
           <section class="intro-text">
             <div class="container">
-              <h1>Education</h1>
+              <h1>Ausbildung</h1>
               
             </div>
         </section>

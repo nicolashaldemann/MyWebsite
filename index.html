@@ -14,11 +14,11 @@
 
     <header id="navbar">
       <nav class="navbar-container container_burger">
-        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <button_burger type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+        </button_burger>
         <div id="navbar-menu" aria-labelledby="navbar-toggle">
           <ul class="navbar-links">
             <li class="navbar-item"><a class="navbar-link" href="#ppicture">Picture</a></li>
@@ -62,14 +62,14 @@
   <div class="card__inner">
     <div class="card__face card__face--back">
       <!--end-->
-      <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-        <div class="container mx-auto">
-          <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div>
+        <div>
+          <div>
             <div class="text-center">
-              <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+              <h1>
                 Contact Us
               </h1>
-              <p class="text-gray-400 dark:text-gray-400">
+              <p>
                 Fill up the form below to send us a message.
                 
               </p>
@@ -103,21 +103,21 @@
                  
                 </div>
                 <div class="mb-6">
-                  <label>
-                    <input for="message" required />
-                    <div class="label-text">Message</div>
-                    
-                </label>
+
+                  
+                  <label for="message" class="label-text">Your Message</label>
+
+                  <textarea  rows="3" name="message" id="message" class="label-text" required></textarea>
               
       
                   
                 </div>
                 <div class="mb-6">
-                  <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                  <button type="submit">
                     Send Message
                   </button>
                 </div>
-                <p class="text-base text-center text-gray-400" id="result"></p>
+                <p id="result"></p>
               </form>
             </div>
           </div>
@@ -131,6 +131,7 @@
           <img src="Pictures/contact.png" alt="" class="pp" />
           
         </div>
+
         <div class="card__body">
           <h3>Für Kontaktformular doppelklicken</h3>
           <button onclick="SendMessage()">Oder hier klicken</button>

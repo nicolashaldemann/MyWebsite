@@ -74,8 +74,7 @@
 }
 
 .gallery__img {
-  max-width: auto;
-  max-height: auto;
+  max-width: 75%;
   object-fit: contain;
   border-radius: 8px;
 }
@@ -284,5 +283,10 @@ time {
   .header_text {
     height: 10vh;
     font-size: 4.5vw;
+  }
+  .gallery__img {
+    width: 99%;
+    object-fit: contain;
+    border-radius: 8px;
   }
 }

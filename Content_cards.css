@@ -108,6 +108,7 @@ body {
 
 .card__body {
   padding: 30px;
+  text-align: center;
 }
 
 .card__body h3 {

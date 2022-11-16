@@ -290,15 +290,3 @@ time {
     border-radius: 8px;
   }
 }
-
-/*skills*/
-.skill {
-  box-sizing: border-box;
-  background: #fff;
-  border-radius: 8px;
-}
-.level {
-  width: 100%;
-  height: 15px;
-  border-radius: 8px;
-}

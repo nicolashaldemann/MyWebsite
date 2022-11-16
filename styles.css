@@ -245,7 +245,7 @@ time {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .timeline-section ul li {
     margin-left: 2rem;
   }
@@ -284,8 +284,9 @@ time {
     height: 10vh;
     font-size: 4.5vw;
   }
+
   .gallery__img {
-    width: 99%;
+    max-width: 99%;
     object-fit: contain;
     border-radius: 8px;
   }

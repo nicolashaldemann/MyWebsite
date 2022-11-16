@@ -1,0 +1,42 @@
+/*skills*/
+.skill {
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+}
+.level {
+  width: 100%;
+  height: 15px;
+  border-radius: 8px;
+}
+
+.skill1 {
+  width: 75%;
+  background: #2fc4b2;
+  height: 15px;
+  border-radius: 8px;
+}
+.skill2 {
+  width: 90%;
+  background: #d32626;
+  height: 15px;
+  border-radius: 8px;
+}
+.skill3 {
+  width: 85%;
+  background: #79d70f;
+  height: 15px;
+  border-radius: 8px;
+}
+.skill4 {
+  width: 65%;
+  background: #b5076b;
+  height: 15px;
+  border-radius: 8px;
+}
+.skill5 {
+  width: 75%;
+  background: #fed330;
+  height: 15px;
+  border-radius: 8px;
+}

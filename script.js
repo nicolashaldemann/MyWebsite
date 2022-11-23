@@ -93,3 +93,77 @@ function SendMessage() {
   );
   card.classList.toggle("is-flipped");
 }
+
+/* Contact */
+
+const form = document.getElementById("form");
+
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+
+  e.preventDefault();
+
+  var object = {};
+
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+
+  var json = JSON.stringify(object);
+
+  msg.innerHTML = "Einen Augenblick bitte";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+
+    headers: {
+      "Content-Type": "application/json",
+
+      Accept: "application/json",
+    },
+
+    body: json,
+  })
+    .then(async (response) => {
+      let json = await response.json();
+
+      if (response.status == 200) {
+        msg.innerHTML = json.message;
+      } else {
+        console.log(response);
+
+        msg.innerHTML = json.message;
+      }
+    })
+
+    .catch((error) => {
+      console.log(error);
+
+      msg.innerHTML = "Ein Fehler ist aufgetreten";
+    })
+
+    .then(function () {
+      form.reset();
+
+      setTimeout(() => {
+        result.style.display = "";
+      }, 3000);
+
+      form.reset();
+    });
+});
+
+/* skills animate */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));

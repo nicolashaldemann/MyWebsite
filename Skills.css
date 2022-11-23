@@ -40,3 +40,12 @@
   height: 15px;
   border-radius: 8px;
 }
+
+.hidden {
+  opacity: 0;
+  transition: all 3.5s;
+}
+
+.show {
+  opacity: 1;
+}

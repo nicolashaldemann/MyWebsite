@@ -58,7 +58,7 @@ simpleSlides();
   window.addEventListener("resize", slideIn);
 })();
 
-/*mobile button*/
+/*mobile Burger Menu*/
 const navbarToggle = navbar.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
 const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");

@@ -94,19 +94,6 @@ function SendMessage() {
   card.classList.toggle("is-flipped");
 }
 
-/* skills animate */
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
-
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
-
 /* Contact */
 
 const form = document.getElementById("form");
@@ -167,3 +154,16 @@ form.addEventListener("submit", function (e) {
       form.reset();
     });
 });
+
+/* skills animate */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));

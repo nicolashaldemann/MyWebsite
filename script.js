@@ -22,7 +22,7 @@ var simpleSlides = function () {
     count = 1;
   }
   slides[count - 1].setAttribute("style", "display:block");
-  setTimeout(simpleSlides, 3600);
+  setTimeout(simpleSlides, 6000);
 };
 
 /*Timeline*/
@@ -167,3 +167,22 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+/* Scroll effect */
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);

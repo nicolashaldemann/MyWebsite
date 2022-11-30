@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="Content_cards.css" />
     <link rel="stylesheet" href="contact_form.css" />
     <link rel="stylesheet" href="Skills.css" />
-    <link rel="stylesheet" href="inner_card.css" />    
+    <link rel="stylesheet" href="inner_card.css" />  
+    <link rel="stylesheet" href="load_effect.css" />    
+    <link rel="stylesheet" href="slides.css" />   
   </head>
   <body>
     <header id="navbar">
@@ -44,7 +46,7 @@
 
       <section class="grid">
         <section id="ppicture"><figure class=”gallery__item gallery__item--1">
-          <img src="Pictures/portrait.jpg" class="gallery__img" alt="Portrait"</figure></section>
+          <img loading="lazy" src="Pictures/portrait.jpg" class="gallery__img" alt="Portrait"</figure></section>
         <section id="pname" >
           <div class="box">
             <h2>Skill Übersicht</h2>
@@ -95,7 +97,7 @@
           </div>
         </section>
 <section id="inner_pwc" class="grid">
-  <div class="innercontent_card">
+  <div class="innercontent_card reveal fade-bottom">
     <div class="innercontent_card__inner">
       <div class="innercontent_card__face innercontent_card__face--front">
         <div class="innercontent_card__content">
@@ -103,7 +105,8 @@
             <img src="Pictures/pwc.png" alt="" class="innercontent_pp" />  
           </div>
           <div class="innercontent_card__body">
-            <p>Für Kontaktformular doppelklicken</p>
+            <h3>2019 - 2022</h3>
+            <p>Mitarbeit an Finanzrevisionen von Investment Fonds nach CH und LI Recht, IT Audit von Finanzinstituten nach CH und LI Recht und erstellen von aufsichtsrechtlichen Berichten</p>
           </div>
         </div>
       </div>
@@ -111,7 +114,7 @@
   </div>
 </section>
 <section id="inner_interdiscount" class="grid"><div>
-  <div class="innercontent_card">
+  <div class="innercontent_card reveal fade-bottom">
     <div class="innercontent_card__inner">
       <div class="innercontent_card__face innercontent_card__face--front">
         <div class="innercontent_card__content">
@@ -119,14 +122,16 @@
             <img src="Pictures/interdiscount.png" alt="" class="innercontent_pp" />  
           </div>
           <div class="innercontent_card__body">
-            <p>Für Kontaktformular doppelklicken</p>
+            <h3>2016 - 2019</h3>
+            <p>Beraten von Kunden im Bereich Consumer-Electronics, bearbeiten von Bestellungen und Reparaturaufträgen und Anfragen von Kunden schriftlich und telefonisch beantworten
+              </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div></section>
-<section id="inner_mc" class="grid"><div>  <div class="innercontent_card">
+<section id="inner_mc" class="grid"><div>  <div class="innercontent_card reveal fade-bottom">
   <div class="innercontent_card__inner">
     <div class="innercontent_card__face innercontent_card__face--front">
       <div class="innercontent_card__content">
@@ -134,13 +139,14 @@
           <img src="Pictures/mcdonald.png" alt="" class="innercontent_pp" />  
         </div>
         <div class="innercontent_card__body">
-          <p>Für Kontaktformular doppelklicken</p>
+          <h3>2013 - 2016</h3>
+          <p>Crew Mitarbieter in der Küche, an der Kasse, McDrive und McCafé</p>
         </div>
       </div>
     </div>
   </div>
 </div></div></section>
-<section id="inner_sky" class="grid"><div>  <div class="innercontent_card">
+<section id="inner_sky" class="grid"><div>  <div class="innercontent_card reveal fade-bottom">
   <div class="innercontent_card__inner">
     <div class="innercontent_card__face innercontent_card__face--front">
       <div class="innercontent_card__content">
@@ -148,7 +154,9 @@
           <img src="Pictures/skywork.png" alt="" class="innercontent_pp" />  
         </div>
         <div class="innercontent_card__body">
-          <p>Für Kontaktformular doppelklicken</p>
+          <h3>2014</h3>
+          <p>Praktikum in den Bereichen Buchhaltung, Marketing und Human Ressources
+          </p>
         </div>
       </div>
     </div>
@@ -168,10 +176,10 @@
               
               
           </section>
-            <div class="slides animate-left"><img  src="Pictures/pwc.png">Text Hier</div>
-            <div class="slides animate-left"><img  src="Pictures/interdiscount.png">Text Hier2</div>
-            <div class="slides animate-left"><img  src="Pictures/skywork.png">Text Hier3</div>
-            <div class="slides animate-left"><img  src="Pictures/mcdonald.png">Text Hier4</div>
+            <div class="slides animate-left"><img class="picture_slides"  src="Pictures/pwc.png"><div>"Er arbeitete sehr sorgfältig und gewissenhaft und erziehlte dadurch eine ausgezeichnete Qualität. Wir erlebten ihn als äusserst selbstständigen und verantwortungsbewussten Mitarbeiter, der sein Pensum jederzeit effizient, gewissenhaft und exakt erfüllte."</div></div>
+            <div class="slides animate-left"><img  class="picture_slides" src="Pictures/interdiscount.png"><div>"Durch sein freundliches Auftreten, die hohe Aufmerksamkeit sowie überlegte Ausdrucksweise gelang es Herrn Haldemann, sehr gute Verkaufserfolge zu erziehlen und Komplettlösungen anzubieten."</div></div>
+            <div class="slides animate-left"><img  class="picture_slides" src="Pictures/skywork.png"><div>"Herr Haldemann hat ein rasches Auffassungsvermögen, welches ihn befähigt, in den verschiedensten Bereichen eingesetzt zu werden"</div></div>
+            <div class="slides animate-left"><img  class="picture_slides" src="Pictures/mcdonald.png"><div>"Wir haben ihn als temafähiger Mitarbeiter kennen und schätzen gelernt. Er arbeitete stets gewissenhaft und erledigte die Arbeiten zu unserer vollsten Zufriedenheit."</div></div>
           </div>
 
 
@@ -254,10 +262,10 @@
       </div>
       
     </div>
-    <div class="card__face card__face--front">
+    <div class="card__face card__face--front reveal fade-bottom">
       <div class="card__content">
         <div class="card__header">
-          <img src="Pictures/contact.png" alt="" class="pp" />
+          <img src="Pictures/contact.png" alt="" class="pp"/>
           
         </div>
         <div class="card__body">

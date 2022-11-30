@@ -56,64 +56,6 @@
   grid-area: education;
 }
 
-/*Slides*/
-
-.simpleSlides {
-  height: 90vh;
-  background-image: linear-gradient(
-    rgb(0, 0, 29),
-    rgb(0, 52, 100) 50%,
-    rgb(0, 0, 29)
-  );
-}
-
-.slides {
-  display: none;
-  max-height: 5vh;
-  max-width: 25vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.animate-left {
-  position: relative;
-  animation: animateleft 1.5s;
-}
-
-.animate-left-text {
-  position: relative;
-  animation: animateleft 1.5s;
-}
-
-@keyframes animateleft {
-  from {
-    left: -500px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-.gallery__img {
-  max-width: 75%;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.header_text {
-  height: 10vh;
-  font-size: 3.5vw;
-}
-
 /*Parallax*/
 
 .parallax_mid {

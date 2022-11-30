@@ -2,20 +2,40 @@
 .grid {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-areas:
-    "ppicture pname"
-    "education education"
-    "referenzen referenzen"
-    "kontakt kontakt";
+    "ppicture ppicture pname pname"
+    "education education education education"
+    "referenzen referenzen referenzen referenzen"
+    "pemloyer pemloyer pemloyer pemloyer"
+    "inner_pwc inner_interdiscount inner_mc inner_sky"
+    "kontakt kontakt kontakt kontakt";
 }
 
 /*Definitionen*/
+#inner_pwc {
+  grid-area: inner_pwc;
+}
+
+#inner_interdiscount {
+  grid-area: inner_interdiscount;
+}
+
+#inner_mc {
+  grid-area: inner_mc;
+}
+
+#inner_sky {
+  grid-area: inner_sky;
+}
 
 #parallax_mid {
   grid-area: parallax_mid;
+}
+#pemployer {
+  grid-area: pemployer;
 }
 #ppicture {
   grid-area: ppicture;
@@ -102,8 +122,7 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-
-  height: 20vh;
+  height: 5vh;
 }
 
 .parallax {
@@ -285,6 +304,10 @@ time {
       "pname"
       "education"
       "referenzen"
+      "inner_pwc"
+      "inner_interdiscount"
+      "inner_mc"
+      "inner_sky"
       "kontakt";
   }
   body {

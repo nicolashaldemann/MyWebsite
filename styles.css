@@ -3,7 +3,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-areas:
     "ppicture pname"
@@ -14,6 +14,9 @@
 
 /*Definitionen*/
 
+#parallax_mid {
+  grid-area: parallax_mid;
+}
 #ppicture {
   grid-area: ppicture;
 }
@@ -93,11 +96,22 @@
 
 /*Parallax*/
 
+.parallax_mid {
+  background-image: url("Pictures/Lightbulbs.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 20vh;
+}
+
 .parallax {
-  background-image: url("Pictures/lightbulb.jpg");
+  background-image: url("Pictures/Lightbulbs.jpg");
+
   height: 90vh;
   background-attachment: fixed;
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 10vh;

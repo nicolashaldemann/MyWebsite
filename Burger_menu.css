@@ -104,17 +104,10 @@ body {
   background-color: var(--navbar-text-color-focus);
   transition: all 0.5s ease-in-out;
 }
-/*
-#navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
-  position: absolute;
-  margin: 0;
-  width: 30px;
-  transition: all 5.5s ease-in-out;
-}
-*/
+
 /*animate*/
 #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
-  transform: rotate(-45deg) translate(-5.4px, 5.4px);
+  transform: rotate(-45deg) translate(-5px, 5px);
   transition: all 0.5s ease-in-out;
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
@@ -123,7 +116,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
-  transform: rotate(45deg) translate(-5.4px, -5.4px);
+  transform: rotate(45deg) translate(-6px, -6px);
   transition: all 0.5s ease-in-out;
 }
 

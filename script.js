@@ -59,6 +59,7 @@ simpleSlides();
 })();
 
 /*mobile Burger Menu*/
+
 const navbarToggle = navbar.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
 const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
@@ -72,6 +73,7 @@ const toggleNavbarVisibility = () => {
 navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarLinksContainer.addEventListener("click", toggleNavbarVisibility);
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 /*Content Cards*/
@@ -89,7 +91,7 @@ card.addEventListener("dblclick", function (e) {
 
 function SendMessage() {
   alert(
-    "Um Nachricht zu sehen auf folgenden Proton Mail zugreifen: mywebsite_NH@proton.me Passwort: B-qwertz-F"
+    "Um Nachricht zu sehen auf folgende Proton-Mail zugreifen: mywebsite_NH@proton.me Passwort: B-qwertz-F"
   );
   card.classList.toggle("is-flipped");
 }

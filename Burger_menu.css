@@ -76,6 +76,7 @@ body {
   height: 30px;
   margin-right: 0.5em;
 }
+
 #navbar-toggle {
   cursor: pointer;
   border: none;
@@ -86,7 +87,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  display: flex;
+  transition: all 0.5s ease-in-out;
 }
+
 .icon-bar {
   display: block;
   width: 25px;
@@ -94,23 +99,34 @@ body {
   margin: 2px;
   background-color: var(--navbar-text-color);
 }
+
 #navbar-toggle:is(:focus, :hover) .icon-bar {
   background-color: var(--navbar-text-color-focus);
+  transition: all 0.5s ease-in-out;
 }
+/*
 #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
   position: absolute;
   margin: 0;
   width: 30px;
+  transition: all 5.5s ease-in-out;
 }
+*/
+/*animate*/
 #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
-  transform: rotate(45deg);
+  transform: rotate(-45deg) translate(-5.4px, 5.4px);
+  transition: all 0.5s ease-in-out;
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
-  opacity: 0;
+  transform: translateX(-50px);
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
-  transform: rotate(-45deg);
+  transform: rotate(45deg) translate(-5.4px, -5.4px);
+  transition: all 0.5s ease-in-out;
 }
+
 #navbar-menu {
   position: fixed;
   top: var(--navbar-height);
@@ -119,11 +135,13 @@ body {
   visibility: hidden;
   left: 0;
   right: 0;
+  transition: all 0.5s ease-in-out;
 }
 #navbar-toggle[aria-expanded="true"] + #navbar-menu {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   visibility: visible;
+  transition: all 0.5s ease-in-out;
 }
 .navbar-links {
   list-style: none;
@@ -138,6 +156,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
+
 @media screen and (min-width: 700px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {

@@ -37,24 +37,6 @@
   }
 }
 
-.gallery__img {
-  max-width: 75%;
-  object-fit: contain;
-  border-radius: 8px;
-}
 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.header_text {
-  height: 10vh;
-  font-size: 3.5vw;
-}
-
-.picture_slides {
-  width: 20vw;
+@media screen and (max-width: 700px) {
 }

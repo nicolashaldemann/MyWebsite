@@ -79,7 +79,7 @@ const card = document.querySelector(".card__inner");
 
 card.addEventListener("dblclick", function alertMsg() {
   alert(
-    "Um Nachricht zu sehen auf folgenden Proton Mail zugreifen: mywebsite_NH@proton.me Passwort: B-qwertz-F"
+    "Um Nachricht zu sehen auf folgende Proton-Mail zugreifen: mywebsite_NH@proton.me Passwort: B-qwertz-F"
   );
 });
 

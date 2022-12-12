@@ -232,6 +232,7 @@ time {
   border-radius: 8px;
 }
 .gallery__img_p {
+  margin-top: 10%;
   max-width: 75%;
   object-fit: contain;
   border-radius: 8px;

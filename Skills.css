@@ -1,4 +1,8 @@
 /*skills*/
+.spacer {
+  margin-top: 12%;
+}
+
 .skill {
   box-sizing: border-box;
   background: #fff;

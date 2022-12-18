@@ -171,7 +171,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-/* Scroll effect */
+/* Scroll down effect */
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

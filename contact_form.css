@@ -1,7 +1,22 @@
 body {
-  background-color: rgb(0, 0, 29);
+  background-color: aliceblue;
+  background-image: linear-gradient(60deg, #723045, #2c5772, #69447c);
+  background-size: 6000% 6000%;
+  animation: bgAnimatedGradient 30s infinite linear;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+}
+
+@keyframes bgAnimatedGradient {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 85%;
+  }
 }
 
 div.container {

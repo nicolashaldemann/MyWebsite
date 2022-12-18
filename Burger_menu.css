@@ -14,11 +14,9 @@
   padding: 0;
 }
 body {
-  height: 100vh;
   line-height: 1.6;
   font-size: 4vw;
   color: aliceblue;
-  background-color: rgb(0, 0, 29);
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -67,7 +65,7 @@ body {
 
 .navbar-link:is(:focus, :hover) {
   color: var(--navbar-text-color-focus);
-  background-color: var(--navbar-bg-contrast);
+  background-color: darkslateblue;
 }
 .navbar-logo {
   background-color: var(--navbar-text-color-focus);
@@ -179,7 +177,7 @@ body {
     line-height: 1.6;
     font-size: 2vw;
     color: aliceblue;
-    background-color: rgb(0, 0, 29);
+    background-color: rgb(226, 226, 239);
     padding-left: 2%;
     padding-right: 2%;
   }

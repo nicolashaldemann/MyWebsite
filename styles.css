@@ -1,0 +1,349 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Content Grid*/
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "ppicture ppicture pname pname"
+    "education education education education"
+    "referenzen referenzen referenzen referenzen"
+    "pemloyer pemloyer pemloyer pemloyer"
+    "inner_pwc inner_interdiscount inner_mc inner_sky"
+    "kontakt kontakt kontakt kontakt";
+}
+
+/*Definitionen*/
+#inner_pwc {
+  grid-area: inner_pwc;
+}
+
+#inner_interdiscount {
+  grid-area: inner_interdiscount;
+}
+
+#inner_mc {
+  grid-area: inner_mc;
+}
+
+#inner_sky {
+  grid-area: inner_sky;
+}
+
+#parallax_mid {
+  grid-area: parallax_mid;
+}
+#pemployer {
+  grid-area: pemployer;
+}
+#ppicture {
+  grid-area: ppicture;
+}
+#pname {
+  grid-area: pname;
+}
+
+#referenzen {
+  grid-area: referenzen;
+}
+
+#kontakt {
+  grid-area: kontakt;
+}
+
+#education {
+  grid-area: education;
+}
+
+/*Parallax*/
+
+.parallax_mid {
+  background-image: url("/Lightbulbs.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5vh;
+  color: blue;
+  font-size: large;
+}
+
+.parallax {
+  background-image: url("Pictures/Lightbulbs.jpg");
+
+  height: 85vh;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10vh;
+}
+
+html {
+  font-size: 10px;
+}
+
+.intro-text {
+  color: var(--white);
+  padding: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+/*Timeline*/
+
+.timeline-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.timeline-section ul {
+  padding: 5rem 0;
+}
+
+.timeline-section ul li {
+  list-style: none;
+  position: relative;
+  width: 5px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  background: var(--color-blue);
+}
+
+.timeline-section ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline-section ul li div {
+  width: 40rem;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: darkslateblue;
+}
+
+.timeline-section ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline-section ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline-section ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent darkslateblue transparent transparent;
+}
+
+.timeline-section ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline-section ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent darkslateblue;
+}
+
+time {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.timeline-section ul li::after {
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline-section ul li.slide-in::after {
+  background: var(--white);
+  border: 3px solid darkslateblue;
+}
+
+.timeline-section ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline-section ul li:nth-child(odd) div {
+  transform: translateX(20rem);
+}
+
+.timeline-section ul li:nth-child(even) div {
+  transform: translateX(-20rem);
+}
+
+.timeline-section ul li.slide-in div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery__img {
+  max-width: 75%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.gallery__img_p {
+  margin-top: 10%;
+  max-width: 75%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.header_text {
+  height: 10vh;
+  font-size: 3.5vw;
+}
+
+.picture_slides {
+  width: 20vw;
+}
+
+@media screen and (max-width: 700px) {
+  .timeline-section ul li {
+    margin-left: 2rem;
+  }
+
+  .timeline-section ul li div {
+    width: calc(100vw - 91px);
+  }
+
+  .timeline-section ul li:nth-child(even) div {
+    left: 45px;
+  }
+
+  .timeline-section ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent darkslateblue transparent transparent;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "ppicture"
+      "pname"
+      "education"
+      "referenzen"
+      "inner_pwc"
+      "inner_interdiscount"
+      "inner_mc"
+      "inner_sky"
+      "kontakt";
+  }
+  body {
+    font-size: 4.5vw;
+    color: aliceblue;
+    background-color: rgb(0, 0, 29);
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .header_text {
+    height: 10vh;
+    font-size: 4.5vw;
+  }
+
+  .gallery__img_p {
+    max-width: 99%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+}
+
+/*Scroll down*/
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid aliceblue;
+  border-right: 5px solid aliceblue;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}

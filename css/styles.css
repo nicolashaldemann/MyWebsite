@@ -63,7 +63,7 @@ html {
 /*Parallax*/
 
 .parallax_mid {
-  background-image: url("Pictures/Lightbulbs.jpg");
+  background-image: url("/Lightbulbs.jpg");
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@ html {
 }
 
 .parallax {
-  background-image: url("Pictures/Lightbulbs.jpg");
+  background-image: url("/Lightbulbs.jpg");
 
   height: 85vh;
   background-attachment: fixed;

@@ -63,7 +63,7 @@ html {
 /*Parallax*/
 
 .parallax_mid {
-  background-image: url("/Lightbulbs.jpg");
+  background-image: url("Pictures/Lightbulbs.jpg");
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
